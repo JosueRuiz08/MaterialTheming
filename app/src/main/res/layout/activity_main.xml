@@ -8,7 +8,7 @@
 
     <Button
         android:id="@+id/btnLogin"
-        style="@style/Widget.AppCompat.Button.Colored"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="8dp"
@@ -28,7 +28,8 @@
         app:helperText="al menos 8 caracteres"
         app:layout_constraintBottom_toTopOf="@+id/btnLogin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Widget.Design.TextInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -42,11 +43,12 @@
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:hint="Nombre"
-        app:helperText="Ingresa tu nombre"
+        android:hint="Name"
+        app:helperText="Ingresa tu nombre y apellidos"
         app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Widget.Design.TextInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
